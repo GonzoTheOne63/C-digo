@@ -1,14 +1,15 @@
 body {
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
         "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-    background-image: url(fotografias2/fondo.jpg);
+    background-image: url(fotografias2/peakpx.jpg);
     background-size: 100%;
-    color: white;
+    color: rgb(251, 253, 252);
 }
 
 h1 {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bolder;
+    
 }
 
 p {
@@ -42,6 +43,7 @@ p {
     color: white;
     text-decoration: none;
     text-align: center;
+    background-color: rgb(173, 126, 5);
 }
 
 .menu a:hover {
