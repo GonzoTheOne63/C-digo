@@ -1,0 +1,43 @@
+/* COMBINADORES DESENDENTE */
+div p {
+    color: green;
+}
+
+/* COMBINADORES HIJOS DIRECTOS */
+ol > li {
+    font-weight: bolder;
+    font-style: italic;
+}
+
+/* HERMANOS ADYACENTES solo al lo que este inmediatamente despues de... */
+h2 + h3 {
+    background-color: lightblue;
+}
+
+/* PINTARÁ a todos los que estén despues de un h2 */
+h2 ~ h3 {
+    background-color: lightblue;
+}
+
+
+/* SOLO a los "p" */
+/* p { 
+    background-color: goldenrod;
+} */
+
+/* COMBINANDO a los que tengan atributo */
+/* p[align="left"] {
+    background-color: goldenrod;
+} */
+
+/* APLICANDO solo a los que esten dentro del "DIV" */
+/* div p[align="left"] {
+    background-color: goldenrod;
+} */
+
+/* APLICANDO solo a los que tengan atributo "HOVER" */
+div p[align="left"]:hover {
+    background-color: goldenrod;
+    color: #ebf598;
+    text-align: center;
+}

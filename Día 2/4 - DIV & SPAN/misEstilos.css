@@ -1,0 +1,14 @@
+.calculo {
+    font-family: monospace;
+    background-color: rgb(172, 172, 172);
+    padding: 1rem;
+}
+
+.resultado {
+    color: red;
+    font-weight: bold;
+}
+
+p {
+
+}

@@ -1,0 +1,10 @@
+Los selectores definen sobre qué elementos se aplicará un conjunto de reglas CSS.
+El CSS es un lenguaje basado en reglas: cada usuario define las reglas que especifican los grupos de estilos que van a aplicarse a elementos particulares o grupos de elementos de la página web.
+Basicamente son los siguientes:
+De tipo: Ej. h1, { }, p{ }...
+De clase:Ej. .resaltar { }, los puedo aplicar a tantos elementos como se desee
+Los de ID, muy similar a los de clase: #resaltarId{ }, solo se pueden aplicar a UN elemento po sitio WEB.
+SELECTORES de ATRIBUTO: a [href*=".edu"] { estilo }
+SELECTORES de PSEUDO-CLASES; p: hover { estilo }
+y PSEUDO-ELEMENTOS p::first-line { estilo } (indica que solo a la primera linea del parrafo se le va a aplicar el estilo.
+MÁS detalles ia a: https://developer.mozilla.org/es/docs/Learn/CSS/Building_blocks
