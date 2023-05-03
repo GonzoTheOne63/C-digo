@@ -1,0 +1,74 @@
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fecha & Hora</title>
+        <link rel="stylesheet" href="myStiles.css">
+
+    </head>
+
+    <body onload="iniciarReloj()">
+        <input type="number" id="tiempoElegido">
+        <button onclick="comenzarTiempo()">¡ALARMA!</button>
+        <h1 id="textoAlarma">00:00:00</h1>
+        <h2 id="textoFecha">DD/MM/YYYY</h2>
+
+        <!-- <audio id="audioAlarma"> -->
+        <audio id="audioAlarma">
+            <source src="Sonidos/alarma.mp3" type="audio/mpeg">
+            Sonido no habilitado
+        </audio>
+
+        <script>
+            let elementoSegundos = document.getElementById("tiempoElegido");
+            let elementoTextoAlarma = document.getElementById("textoAlarma");
+            /* AGREGANDO elemento de sonido */
+            let elementoSonidoAlarma = document.getElementById("audioAlarma");
+
+            function comenzarTiempo()
+            {
+                // setTimeout(tiempoCumplido, 1000 * 5);
+                setTimeout(tiempoCumplido, 1000 * elementoSegundos.value);
+            }
+            function tiempoCumplido()
+            {
+                // alert("Se acabó el tiempo");
+                elementoTextoAlarma.style.color = "green";
+                /* AGREGANDO elemento de sonido */
+                elementoSonidoAlarma.play(); /* CUIDAR poner los "()" */
+            }
+            function iniciarReloj(){
+                    setInterval(ticTac, 1000)
+                }
+
+                function ticTac() {
+                    let tiempoActual = new Date();
+                    let hora = String(tiempoActual.getHours()).padStart(2, "0");
+                    let minutos = String(tiempoActual.getMinutes()).padStart(2, "0");
+                    let segundos = String(tiempoActual.getSeconds()).padStart(2, "0");
+
+                    let textoHora = hora + ":" + minutos + ":" + segundos;
+                    elementoTextoAlarma.textContent = textoHora;
+                }
+
+                function diaActual() {
+                    let fechaActual = new Date();
+                    miFecha.toLocaleDateString("es-Es");
+
+                    let textoFecha = dia + ":" + mes + ":" + año;
+                    elementoTextoAlarma.textContent = textoFecha;
+
+
+                }
+            function test()
+                {
+                    console.log("+1 segundo");
+                }
+        </script>
+
+    </body>
+
+    </html>

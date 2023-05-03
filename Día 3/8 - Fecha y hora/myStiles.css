@@ -1,0 +1,11 @@
+h1 {
+font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-size: 8rem;
+border-style: solid;
+border-color: dodgerblue;
+border-width: .5rem;
+border-radius: .5rem;
+text-align: center;
+color: white;
+background-color: rgb(100, 101, 102);
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CUESTIONARIO</title>
+    <link rel="stylesheet" href="myStyles.css">
+</head>
+
+<body>
+
+    <h1>CUES<span>TEO</span>NARIO</h1>
+    <H2>Cuentas con <span>30</span> segundos para responder</H2>
+    <button class="arranca" onclick="comenzarTiempo()">¡ARRANCA!</button>
+
+    <div>
+        <p><span>1.-</span> ¿Cómo se llama el hijo de Dios?</p>
+        <input type="text" maxlength="30" size="30" placeholder="Tu respuesta aquí">
+        <p><span>2.-</span>¿En qué monte se posó el arca de Noé?</p><input type="text" maxlength="30" size="30"
+            placeholder="Tu respuesta aquí">
+        <p><span>3.-</span>¿Qué rey se disfrazó para salir a la batalla?</p><input type="text" maxlength="30" size="30"
+            placeholder="Tu respuesta aquí">
+        <p><span>4.-</span>¿En cuál de los evangelios se menciona la señal de la presencia de Jesucristo?</p><input
+            type="text" maxlength="30" size="30" placeholder="Tu respuesta aquí">
+        <p><span>5.-</span>¿Cuál de los hijos de Israel terminó como segundo del faraón de Egipto?</p><input type="text"
+            maxlength="30" size="30" placeholder="Tu respuesta aquí">
+    </div>
+
+    <!-- <div class="button-contenedor">
+        <button class="button">PARAR</button>
+        <button class="button">RESET</button>
+    </div> -->
+
+    <div>
+        <!DOCTYPE html>
+        <html>
+        
+        <head>
+            <title>Botones distintos</title>
+            <style style="text-align: center;" class="listo">
+                /* Estilos para el botón 1 */
+                .boton1 {
+                    background-color: #4CAF50;
+                    border: none;
+                    color: white;
+                    padding: 15px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 20px;
+                    margin: 4px 20px;
+                    margin-top: 30px;
+                    cursor: pointer;
+                    border-radius: .5rem;
+                    align-items:last baseline;
+                    font-weight: bold;
+                    font-family: Arial, Helvetica, sans-serif;
+                }
+        
+                /* Estilos para el botón 2 */
+                .boton2 {
+                    background-color: orange;
+                    /* border: 2px solid #4CAF50; */
+                    color: #f30505;
+                    padding: 15px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 20px;
+                    margin: 4px 20px;
+                    cursor: pointer;
+                    border-radius: .5rem;
+                    font-weight: bold;
+                    font-family: Arial, Helvetica, sans-serif;
+                }
+            </style>
+        </head>
+        
+        <body>
+            <button class="boton1">LISTO</button>
+            <a href="#" class="boton2">RESET</a>
+        </body>
+    </div>
+
+    <script>
+        let elementoSegundos = document.getElementById("tiempoElegido");
+        let elementoTextoAlarma = document.getElementById("textoAlarma");
+
+        function comenzarTiempo()
+        {
+            setTimeout(tiempoCumplido, 1000 * 10);
+        }
+        function tiempoCumplido()
+        {
+            alert("Lo siento, se acabó tu tiempo");
+
+            /* PRACTICA DEL CURSO */
+            let tiempoSegundos = document.getElementById("tiempoElegido");
+            let elementoLlamarAlarma = document.getElementById("textoAlarma");
+        }
+
+        function buenTiempo() {
+            setTimeout(tiempoCumplido, 1000 * 9)
+        }
+        function tiempoCumplido() {
+            alert("¡FELICIDADES, LO HAZ LOGRADO");
+
+            let tiempoSegundos = document.getElementById("listo");
+            let elementoLlamarAlarma = document.getElementById("textoAlarma");
+        }
+    </script>
+
+</body>
+
+</html>
